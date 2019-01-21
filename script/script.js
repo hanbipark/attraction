@@ -1,6 +1,6 @@
 $(function(){
     var w=100;
-    var id=setInterval(leftMoving, 5000);
+    var id=setInterval(leftMoving, 2000);
 
     $("#left").click(function(){
         leftMoving();

@@ -100,16 +100,15 @@ header{
 }
 #main{
     width: 100%;
-   padding-top: calc(800/1200*100%);
-    background: url(images/slide1.png) no-repeat;
+   padding-top: calc(640/1200*100%);
+    background: url(images/slide2.png) no-repeat;
     background-size: cover;
-    padding-top: calc(800/1200*100%);
 }
 #content1{
    width: 100%;
     background: url(images/content2.png) no-repeat;
     background-size: cover;
-    padding-top: calc(500/1500*100);
+    padding-top: calc(10/1200*100%);
 /*    border: 1px solid #000;*/
 }
 h2{
@@ -177,15 +176,16 @@ border: 4px solid #cbbef0;
 #content2{
     width: 100%;
     height: 1000px;
-    background-color: #e8e3f1;
+/*    background-color: #e8e3f1;*/
+/*    background-color: #d1d3d4;*/
     display: flex;
     justify-content: center;
     align-items: center;
 }
 #grid{
     display: grid;
-    grid-template-rows: repeat(3,1fr);
-    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
         "item1 item2 item2 item3"
         "item1 item5 item5 item6"
@@ -206,30 +206,43 @@ border: 4px solid #cbbef0;
    display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
     width: 90%;
     height: 90%;
     background-color: #a790e6;
-    opacity: 0;
+/*    opacity: 0;*/
     cursor: pointer;
+    color: #a790e6;
+    background-color: rgba(225,225,225,0.7);
+    border: 5px solid #a790e6;
+    opacity: 0.5;
 }
 .item a{
-    font-size: 0;
+    font-size: 2rem;
+    color: #fff;
     text-align: center;
     z-index: 10;
 }
 .item:hover a{
     font-size: 2rem;
-    color: #a790e6;
+    color:  #a790e6;
+    text-align: center;
+    z-index: 10;
+    font-weight: bolder;
 }
-.item:hover .bg-hover{
-    background-color: rgba(225,225,225,0.7);
-    border: 3px solid #a790e6;
-    opacity: 0.5;
+.item-1:hover, .item-3:hover, .item-4:hover, .item-5:hover, .item-6:hover{
+   background-size: auto 150%;
+   transition: all .3s ease;
 }
+.item-2:hover{
+    background-size: 150% auto ;
+}
+
 .item-1{
     grid-area: item1;
     background: url(images/necklace.jpg) center no-repeat;
     background-size: cover;
+
 }
 .item-2{
     grid-area: item2;
@@ -260,11 +273,53 @@ border: 4px solid #cbbef0;
 
 #content3{
     width: 100%;
-    height: 1200px;
-    background-color: #f1f1f1;
+    padding-top: calc(1200/1200*100%);
+    background: url(images/bg.png) no-repeat;
+       background-size: cover;
+
+}
+#content4{
+    width: 100%;
+    height: auto;
+      display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.box1, .box2{
+    width: 40%;
+    height: 400px;
+    margin: 5% 0%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.box1{
+    background: url(images/visitbg.png) no-repeat;
+    background-size: cover;
+
+}
+.box1:hover>p, .box2:hover>p{
+   background-color: white;
+    color: #86848f;
+    transition: all .5s ease;
+}
+
+.box2{
+    background: url(images/phonebg.png) no-repeat;
+    background-size: cover;
+}
+.box1>p, .box2>p{
+    width: 180px;
+    text-align: center;
+    padding: 2% 4%;
+    border: 1px solid #fff;
+    color: white;
+    cursor: pointer;
 }
 footer{
     width: 100%;
     height: 400px;
-    background-color: #ffb699;
+    background-color: grey;
+
 }
