@@ -175,6 +175,7 @@ border: 4px solid #cbbef0;
     grid-template-rows: repeat(2,40px);
     justify-content: center;
     align-items: center;
+    background-color: red;
 /*    border: 1px solid #000;*/
 }
 .collect>img{
