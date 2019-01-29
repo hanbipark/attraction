@@ -179,7 +179,7 @@ border: 4px solid #cbbef0;
 /*    border: 1px solid #000;*/
 }
 .collect>img{
-    width: 30%;
+    width: 50%;
     height: auto;
     cursor: pointer;
 }
@@ -238,20 +238,23 @@ display: grid;
     color:  #a790e6;
     text-align: center;
     z-index: 10;
-    font-weight: bolder;
+/*    font-weight: bold;*/
+    white-space: -5;
+     transition: all 1s ease;
 }
 .item-1:hover, .item-3:hover, .item-4:hover, .item-5:hover, .item-6:hover{
-   background-size: auto 150%;
-   transition: all .3s ease;
+   background-size: auto 120%;
+    transition: all .7s ease;
 }
 .item-2:hover{
-    background-size: 150% auto ;
+    background-size: 120% auto ;
 }
 
 .item-1{
  grid-area: item1;
     background: url(images/necklace.jpg) center no-repeat;
     background-size: cover;
+
 
 }
 .item-2{
@@ -291,7 +294,7 @@ display: grid;
 #content4{
     width: 100%;
     height: auto;
-      display: flex;
+    display: flex;
     justify-content: space-around;
     align-items: center;
 }
@@ -303,10 +306,13 @@ display: grid;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+
 }
+
 .box1{
     background: url(images/visitbg.png) no-repeat;
     background-size: cover;
+       margin-left: 5%;
 
 }
 #content4 p:hover{
@@ -318,6 +324,7 @@ display: grid;
 .box2{
     background: url(images/phonebg.png) no-repeat;
     background-size: cover;
+    margin-right: 5%;
 }
 .box1>p, .box2>p{
     width: 180px;
@@ -340,11 +347,17 @@ footer p{
     font-size: 1.4rem;
     padding: 5px;
 }
+footer a{
+    line-height: 1.5rem;
+}
 .foot{
     margin-top: 20px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+.office address{
+    line-height: 1.5rem;
 }
 i{
     font-size: 1.2rem;
@@ -353,6 +366,7 @@ i{
 }
 .copy{
     text-align: center;
+    font-weight: 900;
     color: black;
-    margin-top: 50px;
+    margin-top: 20px;
 }
