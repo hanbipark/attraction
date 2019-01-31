@@ -32,10 +32,10 @@ header{
     background-color: #a790e6;
 }
 .up{
-    width: 40%;
+    width: 25%;
     position: absolute;
     height: 40px;
-    right: 5%;
+    right: 1%;
 }
 .up>li{
     margin-right: 3%;
